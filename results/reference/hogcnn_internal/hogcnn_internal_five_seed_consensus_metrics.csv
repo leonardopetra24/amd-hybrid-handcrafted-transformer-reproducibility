@@ -1,0 +1,2 @@
+method,metric_aggregation,n,accuracy,macro_f1,balanced_accuracy,correct_count,consensus_ties
+HOGCNN_EFFICIENTNETB3_ADAPTED_3CLASS,five-seed majority-vote consensus,594,0.9074074074074074,0.8837679468615344,0.8825730356481366,539,0

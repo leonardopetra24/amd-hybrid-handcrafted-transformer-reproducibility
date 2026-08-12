@@ -1,0 +1,44 @@
+{
+  "pipeline_version": "Production FINAL v3",
+  "roi_pairing_mode_requested": "AUTO",
+  "roi_pairing_mode_used": "STEM",
+  "enable_final_copy": true,
+  "copy_status": "COMPLETED",
+  "blocking_failures": [],
+  "accepted_mapping_statuses": [
+    "AUTO_CONFIRMED",
+    "CONFIRMED",
+    "MANUALLY_VERIFIED"
+  ],
+  "validation_summary": {
+    "auto_confirmed": 243,
+    "manually_verified": 44,
+    "total_validated": 287,
+    "unresolved": 0,
+    "incorrect_after_review": 0
+  },
+  "checks": {
+    "manifest_v1_total": 597,
+    "final_manifest_total": 594,
+    "outer_fold_total": 594,
+    "provenance_597_total": 597,
+    "provenance_594_total": 594,
+    "normal_total": 287,
+    "normal_auto_confirmed": 243,
+    "normal_manually_verified": 44,
+    "normal_total_validated": 287,
+    "normal_unresolved": 0,
+    "roi_pairing_mode_used": "STEM",
+    "normal_roi_pairs": 287,
+    "missing_preprocessed_path_597": 0,
+    "missing_roi_path_597": 0,
+    "duplicate_preprocessed_assignments_597": 0,
+    "duplicate_roi_assignments_597": 0,
+    "missing_outer_fold_594": 0,
+    "non_validated_mapping_594": 0
+  },
+  "python_version": "3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:42:04) [MSC v.1943 64 bit (AMD64)]",
+  "opencv_version": "4.12.0",
+  "pandas_version": "2.3.2",
+  "numpy_version": "2.2.6"
+}

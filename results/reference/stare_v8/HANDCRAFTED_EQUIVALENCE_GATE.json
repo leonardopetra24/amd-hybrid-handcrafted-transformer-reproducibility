@@ -1,0 +1,12 @@
+{
+  "n_verified": 594,
+  "feature_order": [
+    "RGB_color_moments_9D",
+    "uniform_LBP_18D",
+    "Mahotas_Haralick_first5_5D"
+  ],
+  "mean_absolute_difference": 0.0,
+  "maximum_absolute_difference": 0.0,
+  "allclose": true,
+  "failed_samples": 0
+}

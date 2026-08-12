@@ -1,0 +1,107 @@
+{
+  "dataset_release": "AMD_DATASET_594_PRODUCTION_v1",
+  "classes": [
+    "NORMAL",
+    "AMD_DRY",
+    "AMD_WET"
+  ],
+  "n_samples": 594,
+  "seeds": [
+    42,
+    123,
+    2026,
+    3407,
+    7777
+  ],
+  "preprocessing": {
+    "clahe": {
+      "color_space": "LAB",
+      "channel": "L",
+      "clip_limit": 2.0,
+      "tile_grid": [
+        8,
+        8
+      ]
+    },
+    "gamma_parameter": 1.1,
+    "gamma_implementation": "output=(input/255)^(1/gamma)*255 via uint8 LUT",
+    "fundus_detection": "HSV V channel -> GaussianBlur(5x5) -> Otsu -> invert if white area <20%",
+    "morphology": "7x7 kernel; close x2; open x1",
+    "fundus_shape": "largest contour -> minEnclosingCircle -> outside circle black",
+    "preprocessed_size": [
+      512,
+      512
+    ],
+    "roi_size": [
+      224,
+      224
+    ],
+    "roi_mode": "human-assisted fixed-size crop"
+  },
+  "handcrafted32": {
+    "order": [
+      "RGB color moments 9D",
+      "uniform LBP 18D",
+      "Mahotas Haralick first five 5D"
+    ],
+    "lbp": {
+      "P": 16,
+      "R": 2,
+      "method": "uniform",
+      "bins": 18
+    },
+    "haralick": {
+      "distance": 1,
+      "aggregation": "mean across directions",
+      "keep_first": 5
+    }
+  },
+  "frozen_vit": {
+    "timm_model_id": "vit_base_patch16_224",
+    "pretrained": true,
+    "num_classes": 0,
+    "normalization_mean": [
+      0.5,
+      0.5,
+      0.5
+    ],
+    "normalization_std": [
+      0.5,
+      0.5,
+      0.5
+    ],
+    "embedding_dim": 768,
+    "note": "Exact resolved timm pretrained_cfg should be archived from runtime."
+  },
+  "nested_cv": {
+    "outer_folds": 5,
+    "inner_folds": 4,
+    "outer_stratification": "Source x Class",
+    "selection_metric": "macro-F1",
+    "C": [
+      0.1,
+      1,
+      10,
+      100
+    ],
+    "gamma": [
+      "scale",
+      0.001,
+      0.01,
+      0.1
+    ],
+    "class_weight": [
+      null,
+      "balanced"
+    ],
+    "smote_k": [
+      3,
+      5
+    ],
+    "pca_dims": [
+      64,
+      128,
+      256
+    ]
+  }
+}

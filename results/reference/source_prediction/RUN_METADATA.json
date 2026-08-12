@@ -1,0 +1,42 @@
+{
+  "analysis_name": "AMD Repository-Identity Source-Prediction Diagnostic v1",
+  "configuration": {
+    "DATASET_ROOT": "AMD_DATASET_594_PRODUCTION_v1",
+    "FEATURE_CACHE_ROOT": "AMD_BASELINE_REPRODUCTION_v1\\feature_cache",
+    "OUTPUT_ROOT": "AMD_SOURCE_PREDICTION_DIAGNOSTIC_v1",
+    "OUTER_FOLDS": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "RIDGE_ALPHA": 1.0,
+    "PCA_COMPONENTS": 128,
+    "N_BOOTSTRAP": 5000,
+    "N_PERMUTATIONS": 200,
+    "RANDOM_SEED": 42,
+    "FAST_MODE": false,
+    "FAST_BOOTSTRAP": 500,
+    "FAST_PERMUTATIONS": 20,
+    "SAVE_FIGURES": true
+  },
+  "software": {
+    "python": "3.10.18",
+    "numpy": "2.2.6",
+    "pandas": "2.3.2"
+  },
+  "input_hashes": {
+    "release_manifest": "baaa45feab022a6c1e191d47001d82c24522a22294a9da0e7f4c0d602901c1b8",
+    "outer_fold_assignments": "74ec30d5aa37b8140677559f3d3ca2214c84cdfa97957b2cbd3c3fe2c8da41a5",
+    "handcrafted_32d": "eb82031b5ec951ef6191a10d93407ef29a59f48647e488f4f8c9ee782888ccb4",
+    "vit_b16_768d": "4d069cad38a73a69d2c1f3d69715671f72b7c3c74441049e037201229a78f1f5"
+  },
+  "scientific_scope": {
+    "primary_metric": "balanced_accuracy",
+    "probe": "fixed linear RidgeClassifier; no source-task tuning",
+    "interpretation": "higher source-prediction performance means more linearly decodable repository information",
+    "does_not_prove": "that the AMD classifier relied exclusively on source identity"
+  },
+  "elapsed_seconds": 2346.3597233000037
+}

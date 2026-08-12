@@ -1,0 +1,17 @@
+{
+  "n": 100,
+  "corrected_by_hybrid": 2,
+  "degraded_by_hybrid": 4,
+  "net_hybrid_minus_frozen": -2,
+  "exact_mcnemar_p": 0.6875,
+  "bootstrap_resamples": 5000,
+  "accuracy_difference_mean": -0.019998000000000002,
+  "accuracy_ci95_low": -0.07000000000000006,
+  "accuracy_ci95_high": 0.030000000000000027,
+  "macro_f1_difference_mean": -0.008791416725558063,
+  "macro_f1_ci95_low": -0.06430211307524607,
+  "macro_f1_ci95_high": 0.05155852306824044,
+  "balanced_accuracy_difference_mean": 0.006638593195034391,
+  "balanced_accuracy_ci95_low": -0.046785752259436465,
+  "balanced_accuracy_ci95_high": 0.06917682257356166
+}

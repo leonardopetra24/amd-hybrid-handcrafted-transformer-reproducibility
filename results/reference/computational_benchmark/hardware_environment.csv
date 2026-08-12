@@ -1,0 +1,2 @@
+timestamp_local,hostname,platform,python,processor,logical_cpu_count,physical_cpu_count,total_ram_gb,torch_num_threads,device,cuda_available,gpu_name,gpu_total_memory_mb,torch_version,cuda_runtime,cudnn_version
+2026-07-27 06:27:07,Leonardo,Windows-10-10.0.26200-SP0,3.10.18,"Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",16,12,15.710990905761719,12,cuda,True,NVIDIA GeForce RTX 3050 Laptop GPU,4095.5,2.5.1+cu121,12.1,90100

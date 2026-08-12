@@ -1,0 +1,44 @@
+{
+  "smoke_test": false,
+  "n_samples": 594,
+  "seeds": [
+    42,
+    123,
+    2026,
+    3407,
+    7777
+  ],
+  "outer_folds": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "scenarios": [
+    "VIT_PCA128_MATCHED",
+    "VIT_RANDOM32_PCA128",
+    "VIT_GENERIC32_PCA128",
+    "VIT_HANDCRAFTED32_PCA128_PROPOSED"
+  ],
+  "expected_prediction_rows": 11880,
+  "observed_prediction_rows": 11880,
+  "duplicate_prediction_keys": 0,
+  "all_scenarios_output_128_dimensions": true,
+  "exact_handcrafted_order": "RGB9_LBP18_Haralick5_then_ViT768",
+  "generic_control": "normalized grayscale16 + green16 histograms",
+  "random_control": "deterministic label-independent Gaussian32",
+  "locked_pipeline": {
+    "pca_components": 128,
+    "C": 10.0,
+    "gamma": "scale",
+    "class_weight": "balanced",
+    "smote_k_neighbors": 5
+  },
+  "probabilities_finite": true,
+  "probabilities_sum_to_one": true,
+  "outer_test_used_for_tuning": false,
+  "direct_rbf_coefficients_available": false,
+  "linear_surrogate_reported": true,
+  "complete_and_valid": true
+}

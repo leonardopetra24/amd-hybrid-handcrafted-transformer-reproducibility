@@ -1,0 +1,3 @@
+component,shape_match,allclose,max_abs_difference,mean_abs_difference
+HANDCRAFTED_32D,True,True,0.0,0.0
+FROZEN_VIT_768D,True,True,0.0,0.0

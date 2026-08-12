@@ -1,0 +1,24 @@
+{
+  "dataset_rows": 594,
+  "class_counts": {
+    "NORMAL": 287,
+    "AMD_WET": 168,
+    "AMD_DRY": 139
+  },
+  "source_counts": {
+    "ODIR": 234,
+    "FIVES": 183,
+    "RFMID": 125,
+    "ADAM": 52
+  },
+  "feature_extraction_run_rows": 10,
+  "recalibration_run_rows": 40,
+  "online_run_rows": 48,
+  "full_ft_training_summary_available": true,
+  "full_ft_checkpoint_inference_available": true,
+  "feature_compatibility_file": "AMD_END_TO_END_COMPUTATIONAL_BENCHMARK_v1\\fresh_feature_compatibility.csv",
+  "benchmark_boundary": "frozen macula-centered ROI to prediction",
+  "excluded_component": "raw-image preprocessing and assisted ROI generation",
+  "inner_hyperparameter_search_cost_included": false,
+  "complete": true
+}

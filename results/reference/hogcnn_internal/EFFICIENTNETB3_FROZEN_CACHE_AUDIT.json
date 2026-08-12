@@ -1,0 +1,30 @@
+{
+  "cache_path": "C:\\Users\\ACER\\Documents\\Juli Riset\\AMD_R2_2_CONTEMPORARY_BASELINES_PACKAGE_v1\\outputs\\hogcnn_pytorch\\efficientnetb3_frozen_feature_maps_594_v1.float16.npy",
+  "sample_ids_path": "C:\\Users\\ACER\\Documents\\Juli Riset\\AMD_R2_2_CONTEMPORARY_BASELINES_PACKAGE_v1\\outputs\\hogcnn_pytorch\\efficientnetb3_frozen_feature_maps_594_v1_sample_ids.npy",
+  "shape": [
+    594,
+    1536,
+    7,
+    7
+  ],
+  "dtype": "float16",
+  "sample_alignment": true,
+  "backbone": "torchvision EfficientNet_B3_Weights.IMAGENET1K_V1",
+  "backbone_trainable": false,
+  "input_size": [
+    224,
+    224
+  ],
+  "normalization_mean": [
+    0.485,
+    0.456,
+    0.406
+  ],
+  "normalization_std": [
+    0.229,
+    0.224,
+    0.225
+  ],
+  "feature_extraction_seconds": 8.158737400000973,
+  "complete_and_valid": true
+}

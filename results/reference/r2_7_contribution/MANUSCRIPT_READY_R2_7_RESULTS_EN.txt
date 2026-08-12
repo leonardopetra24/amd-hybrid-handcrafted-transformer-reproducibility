@@ -1,0 +1,11 @@
+### Handcrafted-feature contribution diagnostics
+
+To determine whether the observed fusion gain reflected specific information from the claimed handcrafted descriptors rather than additional dimensions or PCA regularization alone, we conducted a reviewer-requested post hoc diagnostic using the immutable 594-image outer folds. All matched configurations produced 128-dimensional PCA outputs and used the same locked SMOTE–StandardScaler–PCA–RBF-SVM pipeline. The configurations comprised ViT-PCA128, ViT with 32 deterministic random features, ViT with 32 generic image-histogram features, and ViT with the exact 32-dimensional handcrafted representation.
+
+Across five seeds, the proposed representation achieved 93.30% ± 0.28% accuracy and 91.70% ± 0.35% macro-F1. The matched ViT-PCA128 control achieved 93.13% ± 0.08% accuracy and 91.51% ± 0.11% macro-F1. The Random32 and Generic32 controls achieved 91.36% and 91.32% mean macro-F1, respectively.
+
+Grouped permutation of the held-out features produced mean macro-F1 decreases of 0.25, 0.55, and 0.13 percentage points for Color, LBP, and Haralick, respectively. Permuting all 32 handcrafted features changed macro-F1 by 0.80 percentage points.
+
+The variance-weighted PCA loading shares were 1.14% for Color, 2.37% for LBP, 0.63% for Haralick, and 95.86% for ViT. These quantities describe representation of variance within the retained components and should not be interpreted as predictive or clinical importance in isolation.
+
+Because the final classifier used a nonlinear RBF kernel, direct standardized coefficients in the original feature space were not defined. We therefore report a standardized linear-SVM surrogate as a supplementary interpretability diagnostic rather than as a coefficient analysis of the fitted RBF model.

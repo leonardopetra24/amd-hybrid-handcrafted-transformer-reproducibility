@@ -1,0 +1,2 @@
+accuracy_mean,accuracy_sd,macro_f1_mean,macro_f1_sd,balanced_accuracy_mean,balanced_accuracy_sd,interpretation
+0.9245791245791246,0.0014085185631886794,0.9069352348720724,0.0017703135229992335,0.9037312310430401,0.002026117190905851,Standardized linear-SVM surrogate; not the RBF model

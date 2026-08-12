@@ -1,0 +1,14 @@
+{
+  "expected_rows": 2970,
+  "observed_rows": 2970,
+  "unique_sample_ids": 594,
+  "duplicate_keys": 0,
+  "invalid_probability_rows": 0,
+  "inconsistent_correct_flags": 0,
+  "complete_and_valid": true,
+  "dataset_release": "AMD_DATASET_594_PRODUCTION_v1",
+  "method": "HOGCNN_EFFICIENTNETB3_ADAPTED_3CLASS",
+  "implementation_framework": "PyTorch/torchvision",
+  "adam_absent_true_class": "NORMAL",
+  "adam_balanced_accuracy_definition": "Mean recall across AMD_DRY and AMD_WET, the two classes represented in ADAM ground truth."
+}

@@ -1,0 +1,62 @@
+{
+  "analysis": "AMD exploratory STARE rerun v8 self-contained exact source",
+  "training_dataset": "AMD_DATASET_594_PRODUCTION_v1",
+  "handcrafted_source": "Recovered from original experiment and production-reproduction notebooks",
+  "feature_names": [
+    "R_mean",
+    "R_std",
+    "R_skew",
+    "G_mean",
+    "G_std",
+    "G_skew",
+    "B_mean",
+    "B_std",
+    "B_skew",
+    "LBP_bin_0",
+    "LBP_bin_1",
+    "LBP_bin_2",
+    "LBP_bin_3",
+    "LBP_bin_4",
+    "LBP_bin_5",
+    "LBP_bin_6",
+    "LBP_bin_7",
+    "LBP_bin_8",
+    "LBP_bin_9",
+    "LBP_bin_10",
+    "LBP_bin_11",
+    "LBP_bin_12",
+    "LBP_bin_13",
+    "LBP_bin_14",
+    "LBP_bin_15",
+    "LBP_bin_16",
+    "LBP_bin_17",
+    "Haralick_d1_ASM",
+    "Haralick_d1_Contrast",
+    "Haralick_d1_Correlation",
+    "Haralick_d1_SSVariance",
+    "Haralick_d1_IDM"
+  ],
+  "feature_order": [
+    "RGB color moments 9D",
+    "uniform LBP 18D",
+    "Mahotas Haralick first five 5D",
+    "ViT-B/16 embedding 768D"
+  ],
+  "vit_model": "vit_base_patch16_224",
+  "pipeline": "SMOTE -> StandardScaler -> PCA128 -> RBF-SVM",
+  "primary_seed": 42,
+  "robustness_seeds": [
+    42,
+    123,
+    2026,
+    3407,
+    7777
+  ],
+  "software": {
+    "python": "3.10.18",
+    "numpy": "2.2.6",
+    "pandas": "2.3.2",
+    "torch": "2.5.1+cu121",
+    "timm": "0.9.7"
+  }
+}

@@ -1,0 +1,4 @@
+,pred_AMD_DRY,pred_AMD_WET,pred_NORMAL
+true_AMD_DRY,114,15,10
+true_AMD_WET,12,154,2
+true_NORMAL,1,0,286

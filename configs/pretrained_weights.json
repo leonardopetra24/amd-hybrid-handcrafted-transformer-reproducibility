@@ -1,0 +1,56 @@
+{
+  "proposed_frozen_vit": {
+    "requested_architecture": "vit_base_patch16_224",
+    "resolved_hf_hub_id": "timm/vit_base_patch16_224.augreg2_in21k_ft_in1k",
+    "tag": "augreg2_in21k_ft_in1k",
+    "timm_version": "0.9.7",
+    "input_size": [
+      3,
+      224,
+      224
+    ],
+    "mean": [
+      0.5,
+      0.5,
+      0.5
+    ],
+    "std": [
+      0.5,
+      0.5,
+      0.5
+    ]
+  },
+  "same_condition_partial_full_vit": {
+    "timm_model_id": "vit_base_patch16_224.augreg_in21k_ft_in1k",
+    "pretrained": true,
+    "source_notebook": "notebooks/04_transformer_same_condition_comparison.ipynb"
+  },
+  "retfound_mae_cfp": {
+    "code_repository": "https://github.com/rmaphoh/RETFound",
+    "code_commit": "ae9a9ecf37857cf47b8aa9f87cd6f710d75db287",
+    "checkpoint_hf_repo": "YukunZhou/RETFound_mae_natureCFP",
+    "checkpoint_filename": "RETFound_mae_natureCFP.pth",
+    "hf_snapshot_observed": "556830f78214f0e8da35af965292ac5a3180ac47",
+    "checkpoint_size_observed_gib": 3.681,
+    "checkpoint_included": false,
+    "reason": "Gated third-party checkpoint; user must accept upstream access terms."
+  },
+  "hogcnn_backbone": {
+    "backbone": "torchvision EfficientNet_B3_Weights.IMAGENET1K_V1",
+    "backbone_trainable": false,
+    "input_size": [
+      224,
+      224
+    ],
+    "normalization_mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "normalization_std": [
+      0.229,
+      0.224,
+      0.225
+    ]
+  }
+}

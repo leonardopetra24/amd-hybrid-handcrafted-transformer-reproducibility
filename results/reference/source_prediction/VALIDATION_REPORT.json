@@ -1,0 +1,40 @@
+{
+  "fast_mode": false,
+  "n_samples": 594,
+  "expected_overall_prediction_rows": 3564,
+  "observed_overall_prediction_rows": 3564,
+  "expected_class_conditioned_prediction_rows": 2970,
+  "observed_class_conditioned_prediction_rows": 2970,
+  "overall_duplicate_keys": 0,
+  "class_conditioned_duplicate_keys": 0,
+  "outer_folds": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "handcrafted_shape": [
+    594,
+    32
+  ],
+  "vit_shape": [
+    594,
+    768
+  ],
+  "hybrid_shape": [
+    594,
+    800
+  ],
+  "all_features_finite": true,
+  "training_only_scaler": true,
+  "training_only_pca": true,
+  "smote_used": false,
+  "target": "source_dataset",
+  "disease_label_only_baseline_included": true,
+  "class_conditioned_analysis_included": true,
+  "conditional_permutation_test_included": true,
+  "n_bootstrap": 5000,
+  "n_permutations": 200,
+  "complete_and_valid": true
+}

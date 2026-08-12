@@ -1,0 +1,70 @@
+{
+  "analysis_name": "AMD Nested CV Multi-Seed Reviewer v1",
+  "dataset_root": "AMD_DATASET_594_PRODUCTION_v1",
+  "feature_cache_root": "AMD_BASELINE_REPRODUCTION_v1\\feature_cache",
+  "n_samples": 594,
+  "outer_folds": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "seeds": [
+    42,
+    123,
+    2026,
+    3407,
+    7777
+  ],
+  "inner_folds": 4,
+  "model_selection_metric": "macro_f1",
+  "scenarios": [
+    "A_HANDCRAFTED_32D",
+    "B_VIT_B16_768D",
+    "C_FUSION_800D",
+    "D_VIT_B16_PCA128",
+    "E_FUSION_PCA128_PROPOSED"
+  ],
+  "svm_grid": {
+    "C": [
+      0.1,
+      1.0,
+      10.0,
+      100.0
+    ],
+    "gamma": [
+      "scale",
+      0.001,
+      0.01,
+      0.1
+    ],
+    "class_weight": [
+      null,
+      "balanced"
+    ]
+  },
+  "pca_components_grid": [
+    64,
+    128,
+    256
+  ],
+  "smote_k_neighbors_grid": [
+    3,
+    5
+  ],
+  "probability_enabled": true,
+  "outer_fold_sha256": "74ec30d5aa37b8140677559f3d3ca2214c84cdfa97957b2cbd3c3fe2c8da41a5",
+  "python_version": "3.10.18",
+  "numpy_version": "2.2.6",
+  "pandas_version": "2.3.2",
+  "notes": [
+    "Outer folds are immutable and never used during hyperparameter selection.",
+    "All hyperparameter selection occurs inside the outer-training partition.",
+    "SMOTE, StandardScaler, and PCA are fitted separately inside each inner fold.",
+    "The final outer model is refitted only after the best configuration is selected.",
+    "Macro-F1 is the primary model-selection criterion.",
+    "All 594 samples receive one out-of-fold prediction per scenario and seed.",
+    "Multiple seeds quantify ranking and metric stability."
+  ]
+}

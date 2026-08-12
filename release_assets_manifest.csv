@@ -1,0 +1,3 @@
+filename,size_bytes,size_mib,sha256,purpose
+hogcnn_pytorch_internal.zip,127354742,121.455,f97ab66c82d8474015f3bf7cfc70d91b2225f589e9a39f199cfc870a59c7dd41,"Optional HOG-CNN internal large feature caches plus audit/prediction files; upload as a GitHub Release asset, not a normal Git file."
+AMD_EXPLORATORY_STARE_RERUN_594_v8_SELF_CONTAINED.zip,16557751,15.791,1c80b7db0d4331294ac886d3e5e75812d2bd2baf7196f0f9add473a55a952d7f,Optional full STARE v8 package containing TIFF figure and fitted model pickle files; lightweight evidence is already in the repository.

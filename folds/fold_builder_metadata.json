@@ -1,0 +1,53 @@
+{
+  "expected_total": 594,
+  "outer_n_splits": 5,
+  "inner_n_splits": 4,
+  "outer_random_seed": 20260717,
+  "inner_random_seed_base": 20261717,
+  "stratification_column": "source_class_stratum",
+  "source_order": [
+    "ADAM",
+    "FIVES",
+    "ODIR",
+    "RFMID"
+  ],
+  "class_order": [
+    "NORMAL",
+    "AMD_DRY",
+    "AMD_WET"
+  ],
+  "python_version": "3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:42:04) [MSC v.1943 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "pandas_version": "2.3.2",
+  "numpy_version": "1.26.4",
+  "scikit_learn_version": "1.7.2",
+  "outer_validation_checks": {
+    "total_rows_match": true,
+    "unique_sample_ids": true,
+    "all_folds_present": true,
+    "no_missing_fold": true,
+    "stratum_max_difference_le_1": true
+  },
+  "nested_validation_checks": {
+    "expected_total_rows": true,
+    "outer_validation_match_fold_1": true,
+    "all_inner_folds_present_outer_1": true,
+    "outer_validation_has_no_inner_fold_1": true,
+    "outer_validation_match_fold_2": true,
+    "all_inner_folds_present_outer_2": true,
+    "outer_validation_has_no_inner_fold_2": true,
+    "outer_validation_match_fold_3": true,
+    "all_inner_folds_present_outer_3": true,
+    "outer_validation_has_no_inner_fold_3": true,
+    "outer_validation_match_fold_4": true,
+    "all_inner_folds_present_outer_4": true,
+    "outer_validation_has_no_inner_fold_4": true,
+    "outer_validation_match_fold_5": true,
+    "all_inner_folds_present_outer_5": true,
+    "outer_validation_has_no_inner_fold_5": true
+  },
+  "input_manifest_sha256": "79e74275379f19b80db0e4e540ce9e98e679d1deb52674ba5ec4e2d018b70d86",
+  "outer_assignment_sha256": "6018e7b176ea923a855d7bd97a36ad8fbe8a48087771a40452663e4f7596a028",
+  "nested_assignment_sha256": "615041db8e000fe9aef7d353ef9d86c1d9728560773db75b71664474e2bf4a5b",
+  "lodo_assignment_sha256": "0c88bee768d4a4e41aa098a785b3943b7d5d7423b108e96331c82cda0527fd40"
+}

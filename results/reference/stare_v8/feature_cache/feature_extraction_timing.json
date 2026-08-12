@@ -1,0 +1,40 @@
+{
+  "n_stare": 100,
+  "handcrafted_seconds": 6.046013599960133,
+  "vit_seconds": 2.623526299954392,
+  "hybrid_seconds": 8.669539899914525,
+  "handcrafted_ms_per_image": 60.460135999601334,
+  "vit_ms_per_image": 26.23526299954392,
+  "hybrid_ms_per_image": 86.69539899914525,
+  "vit_model_requested": "vit_base_patch16_224",
+  "vit_pretrained_cfg": {
+    "url": "",
+    "hf_hub_id": "timm/vit_base_patch16_224.augreg2_in21k_ft_in1k",
+    "architecture": "vit_base_patch16_224",
+    "tag": "augreg2_in21k_ft_in1k",
+    "custom_load": false,
+    "input_size": [
+      3,
+      224,
+      224
+    ],
+    "fixed_input_size": true,
+    "interpolation": "bicubic",
+    "crop_pct": 0.9,
+    "crop_mode": "center",
+    "mean": [
+      0.5,
+      0.5,
+      0.5
+    ],
+    "std": [
+      0.5,
+      0.5,
+      0.5
+    ],
+    "num_classes": 1000,
+    "pool_size": null,
+    "first_conv": "patch_embed.proj",
+    "classifier": "head"
+  }
+}

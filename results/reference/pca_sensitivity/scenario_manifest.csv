@@ -1,0 +1,6 @@
+scenario,display_label,input_dimension,pca_mode,requested_pca_components,is_proposed_reference
+HYBRID_PCA_64D,PCA-64,800,fixed,64.0,False
+HYBRID_PCA_128D_PROPOSED,PCA-128 (proposed),800,fixed,128.0,True
+HYBRID_PCA_256D,PCA-256,800,fixed,256.0,False
+HYBRID_PCA_95PCT_VARIANCE,PCA-95% variance,800,variance,0.95,False
+HYBRID_NO_PCA_800D,No PCA (800D),800,none,,False

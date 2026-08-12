@@ -1,0 +1,26 @@
+{
+  "cache_path": "C:\\Users\\ACER\\Documents\\Juli Riset\\AMD_R2_2_CONTEMPORARY_BASELINES_PACKAGE_v1\\outputs\\hogcnn_pytorch\\hog_26244_features_594_v2_safe.npz",
+  "cache_source": "migrated from hog_26244_features_594.npz",
+  "shape": [
+    594,
+    26244
+  ],
+  "dtype": "float32",
+  "finite": true,
+  "sample_alignment": true,
+  "elapsed_seconds_current_session": 8.818476799999189,
+  "parameters": {
+    "orientations": 9,
+    "pixels_per_cell": [
+      8,
+      8
+    ],
+    "cells_per_block": [
+      2,
+      2
+    ],
+    "block_norm": "L2-Hys",
+    "expected_dim": 26244
+  },
+  "complete_and_valid": true
+}

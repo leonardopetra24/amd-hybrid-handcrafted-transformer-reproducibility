@@ -1,0 +1,40 @@
+{
+  "smoke_test": false,
+  "n_samples": 594,
+  "input_feature_shape": [
+    594,
+    800
+  ],
+  "scenarios": [
+    "HYBRID_PCA_64D",
+    "HYBRID_PCA_128D_PROPOSED",
+    "HYBRID_PCA_256D",
+    "HYBRID_PCA_95PCT_VARIANCE",
+    "HYBRID_NO_PCA_800D"
+  ],
+  "seeds": [
+    42,
+    123,
+    2026,
+    3407,
+    7777
+  ],
+  "held_out_sources": [
+    "ADAM",
+    "FIVES",
+    "ODIR",
+    "RFMID"
+  ],
+  "expected_prediction_rows": 14850,
+  "observed_prediction_rows": 14850,
+  "expected_source_seed_runs": 100,
+  "observed_metric_runs": 100,
+  "observed_hyperparameter_runs": 100,
+  "observed_computational_runs": 100,
+  "duplicate_prediction_keys": 0,
+  "all_source_seed_coverage_complete": true,
+  "probabilities_finite": true,
+  "probabilities_within_zero_one": true,
+  "probability_row_sums_close_to_one": true,
+  "complete_and_valid": true
+}

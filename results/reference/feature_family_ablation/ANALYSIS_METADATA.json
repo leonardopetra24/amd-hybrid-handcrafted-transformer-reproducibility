@@ -1,0 +1,20 @@
+{
+  "family_definition": {
+    "COLOR_9D": "indices 0-8: RGB mean, standard deviation, and skewness",
+    "LBP_18D": "indices 9-26: uniform LBP P=16, R=2 histogram",
+    "HARALICK_5D": "indices 27-31: ASM, contrast, correlation, sum-of-squares variance, inverse difference moment"
+  },
+  "primary_design": "leave-one-family-out from full 800D fusion",
+  "secondary_design": "add-one-family to frozen 768D ViT",
+  "seeds": [
+    42,
+    123,
+    2026,
+    3407,
+    7777
+  ],
+  "inner_folds": 4,
+  "pca_components": 128,
+  "primary_statistical_unit": "unique image consensus across five seeds",
+  "warning": "Do not interpret a single family as causal solely from add-one-family results. Use leave-one-family-out, paired consensus comparisons, and source/class patterns jointly."
+}

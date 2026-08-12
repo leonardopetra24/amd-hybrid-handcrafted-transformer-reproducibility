@@ -1,0 +1,11 @@
+### End-to-end computational benchmark
+
+Computational cost was measured from the frozen macula-centered ROI input. The benchmark separated one-time feature extraction, downstream selected-hyperparameter recalibration, and online ROI-to-prediction inference. Raw-image preprocessing and the assisted ROI-generation step were excluded because they were shared upstream procedures.
+
+For the complete 594-image corpus, frozen ViT feature extraction required 10.80 s using batch size 16. The hybrid pipeline required 49.37 s because the same ViT extraction was supplemented by the 32-dimensional handcrafted descriptor calculation. After the features were available, mean selected-hyperparameter recalibration required 0.909 s for the frozen ViT–SVM and 0.407 s for the hybrid PCA–SVM. These recalibration values exclude the inner hyperparameter-grid search and should be described as final fitting costs.
+
+At batch size 1, mean direct ROI-to-prediction latency was 25.06 ms/image for the frozen ViT–SVM and 109.61 ms/image for the proposed hybrid. At batch size 16, the corresponding throughputs were 54.20 and 12.46 images/s. The additional hybrid latency includes a separate OpenCV decoding pass used by the exact production handcrafted-feature implementation.
+
+Full ViT-B/16 fine-tuning required a mean of 430.93 s per outer-fold run and optimized 85,800,963 neural parameters. The frozen and hybrid pipelines optimized no backbone parameters and stored compact downstream classifier bundles in addition to the fixed pretrained backbone. The full fine-tuning training time was imported from the completed experiment; a strict direct wall-time comparison requires confirmation that it was produced on identical hardware.
+
+Overall, the engineering advantage of the proposed framework is not zero-cost inference. Its principal advantage is that the expensive neural representation is extracted once and can then be reused for rapid PCA–SVM recalibration without repeated backbone optimization. The hybrid incurs additional offline and online handcrafted-feature cost relative to the frozen ViT baseline, and this overhead should be reported alongside the observed predictive gains.

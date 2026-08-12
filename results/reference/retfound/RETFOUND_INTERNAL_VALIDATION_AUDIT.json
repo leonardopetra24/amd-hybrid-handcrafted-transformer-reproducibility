@@ -1,0 +1,32 @@
+{
+  "method": "RETFOUND_MAE_CFP_FROZEN_PCA128_SVM",
+  "expected_rows": 2970,
+  "observed_rows": 2970,
+  "unique_sample_ids": 594,
+  "seeds": [
+    42,
+    123,
+    2026,
+    3407,
+    7777
+  ],
+  "duplicate_keys": 0,
+  "invalid_probability_rows": 0,
+  "maximum_probability_sum_error": 5.551115123125783e-16,
+  "inconsistent_correct_flags": 0,
+  "manifest_alignment_rows": 594,
+  "canonical_comparator_rows": 5940,
+  "complete_and_valid": true,
+  "retfound_consensus_ties": 0,
+  "canonical_consensus_ties": {
+    "D_VIT_B16_PCA128": 0,
+    "E_FUSION_PCA128_PROPOSED": 0
+  },
+  "bootstrap_repetitions": 5000,
+  "bootstrap_seed": 20260730,
+  "paired_comparators": [
+    "D_VIT_B16_PCA128",
+    "E_FUSION_PCA128_PROPOSED"
+  ],
+  "holm_status": "Not finalized here. Final Holm correction must include the complete pre-specified R2.2 comparison family after HOG-CNN and repaired Full-FT sample predictions are available."
+}

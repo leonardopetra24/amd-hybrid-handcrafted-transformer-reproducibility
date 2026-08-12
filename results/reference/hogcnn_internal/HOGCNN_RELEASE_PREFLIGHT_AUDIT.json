@@ -1,0 +1,30 @@
+{
+  "package_root": "C:\\Users\\ACER\\Documents\\Juli Riset\\AMD_R2_2_CONTEMPORARY_BASELINES_PACKAGE_v1",
+  "roi_zip": "C:\\Users\\ACER\\Documents\\Juli Riset\\AMD_R2_2_CONTEMPORARY_BASELINES_PACKAGE_v1\\notebooks\\ROI_594.zip",
+  "roi_root": "C:\\Users\\ACER\\Documents\\Juli Riset\\AMD_R2_2_CONTEMPORARY_BASELINES_PACKAGE_v1\\data\\ROI_594",
+  "manifest_rows": 594,
+  "unique_sample_ids": 594,
+  "class_counts": {
+    "NORMAL": 287,
+    "AMD_WET": 168,
+    "AMD_DRY": 139
+  },
+  "source_counts": {
+    "ODIR": 234,
+    "FIVES": 183,
+    "RFMID": 125,
+    "ADAM": 52
+  },
+  "fold_counts": {
+    "1": 119,
+    "2": 119,
+    "3": 119,
+    "4": 119,
+    "5": 118
+  },
+  "outer_fold_sha256": "74ec30d5aa37b8140677559f3d3ca2214c84cdfa97957b2cbd3c3fe2c8da41a5",
+  "expected_outer_fold_sha256": "74ec30d5aa37b8140677559f3d3ca2214c84cdfa97957b2cbd3c3fe2c8da41a5",
+  "image_errors": 0,
+  "checksum_mismatches": 0,
+  "complete_and_valid": true
+}

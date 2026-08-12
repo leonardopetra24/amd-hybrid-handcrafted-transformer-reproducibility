@@ -1,0 +1,22 @@
+{
+  "release_name": "AMD_DATASET_594_PRODUCTION_v1",
+  "release_created_utc": "2026-07-23T01:34:39.593040+00:00",
+  "release_status": "FROZEN",
+  "source_pipeline_version": "Production FINAL v3",
+  "sample_count": 594,
+  "raw_file_count": 594,
+  "preprocessed_file_count": 594,
+  "roi_file_count": 594,
+  "class_counts": {
+    "NORMAL": 287,
+    "AMD_WET": 168,
+    "AMD_DRY": 139
+  },
+  "mapping_status_counts": {
+    "CONFIRMED": 307,
+    "AUTO_CONFIRMED": 243,
+    "MANUALLY_VERIFIED": 44
+  },
+  "blocking_failures": [],
+  "immutability_note": "Do not modify files in this release. Create a new version directory for any future change."
+}

@@ -1,0 +1,27 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+.env
+*.log
+
+# Original images / local dataset material
+data/raw/
+data/preprocessed/
+data/ROI_594/
+AMD_DATASET_594_PRODUCTION_v1/RAW_594/
+AMD_DATASET_594_PRODUCTION_v1/PREPROCESSED_594/
+AMD_DATASET_594_PRODUCTION_v1/ROI_594/
+
+# Large/gated model weights and checkpoints
+weights/
+checkpoints/
+*.pth
+*.pt
+*.ckpt
+*.tiff
+
+# Large HOG-CNN caches are supplied as optional GitHub Release assets
+*efficientnetb3_frozen_feature_maps*.npy
+*hog_26244_features*.npz

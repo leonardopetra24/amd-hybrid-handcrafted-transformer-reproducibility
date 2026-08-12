@@ -1,0 +1,9 @@
+### Exploratory STARE dataset-shift evaluation
+
+The STARE assessment was repeated after freezing the corrected 594-image development dataset. The exact handcrafted extraction function was recovered from the original experimental and production-reproduction notebooks. The resulting 32-dimensional vector comprised nine RGB color moments, an 18-bin uniform LBP histogram (P=16, R=2), and the first five directional-mean Mahotas Haralick features at distance 1. Before STARE evaluation, this function reproduced the canonical 594-image handcrafted cache with a maximum absolute difference of 0. The frozen ViT branch used the original `vit_base_patch16_224` model identifier and 0.5 channel-wise normalization. STARE was not used for training or model selection.
+
+Using the prespecified production seed of 42, Frozen ViT–SVM achieved 78.00% accuracy and 72.75% macro-F1, whereas the Hybrid PCA-128–SVM achieved 78.00% accuracy and 74.34% macro-F1. Across five robustness seeds, Frozen ViT–SVM achieved 78.00% ± 1.58% accuracy and 72.95% ± 2.44% macro-F1. The Hybrid achieved 76.40% ± 1.14% accuracy and 72.37% ± 1.39% macro-F1.
+
+At the five-seed consensus level, the Hybrid corrected 2 Frozen errors and degraded 4 Frozen-correct cases. The exact McNemar p-value was 0.6875, and the paired bootstrap 95% confidence interval for the accuracy difference was -7.00 to 3.00 percentage points.
+
+The experiment is interpreted as an exploratory rule-harmonized dataset-shift evaluation, not clinical external validation.

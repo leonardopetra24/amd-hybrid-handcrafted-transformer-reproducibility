@@ -1,0 +1,26 @@
+{
+  "n_train": 594,
+  "n_stare": 100,
+  "methods": [
+    "FROZEN_VIT_SVM",
+    "PROPOSED_HYBRID_PCA128_SVM"
+  ],
+  "seeds": [
+    42,
+    123,
+    2026,
+    3407,
+    7777
+  ],
+  "primary_seed": 42,
+  "expected_prediction_rows": 1000,
+  "observed_prediction_rows": 1000,
+  "duplicate_prediction_keys": 0,
+  "probabilities_finite": true,
+  "probabilities_sum_to_one": true,
+  "handcrafted_equivalence_passed": true,
+  "feature_order": "Color9_LBP18_Haralick5_then_ViT768",
+  "vit_model": "vit_base_patch16_224",
+  "stare_used_for_training_or_selection": false,
+  "complete_and_valid": true
+}

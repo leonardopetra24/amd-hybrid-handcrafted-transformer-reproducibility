@@ -1,0 +1,69 @@
+{
+  "package_status": "READY_FOR_PRIVATE_GITHUB_UPLOAD",
+  "public_release_requires": [
+    "author code-license decision",
+    "final online audit",
+    "public GitHub URL insertion into manuscript/response"
+  ],
+  "dataset": {
+    "rows": 594,
+    "classes": {
+      "NORMAL": 287,
+      "AMD_DRY": 139,
+      "AMD_WET": 168
+    }
+  },
+  "nested_prediction_rows": 14850,
+  "retfound_internal_prediction_rows": 2970,
+  "retfound_internal": {
+    "pooled_accuracy": {
+      "mean": 0.9313131313131313,
+      "sample_sd": 0.001408518563188706
+    },
+    "pooled_macro_f1": {
+      "mean": 0.9148177024161634,
+      "sample_sd": 0.0020287653783856545
+    },
+    "pooled_balanced_accuracy": {
+      "mean": 0.9119171561705339,
+      "sample_sd": 0.0025540022909133196
+    }
+  },
+  "hogcnn_internal": {
+    "accuracy": {
+      "mean": 0.8993265993265993,
+      "sample_sd": 0.004191885386528169
+    },
+    "macro_f1": {
+      "mean": 0.8745892788479022,
+      "sample_sd": 0.004814713694590118
+    },
+    "balanced_accuracy": {
+      "mean": 0.8733699451588555,
+      "sample_sd": 0.004731023194968442
+    }
+  },
+  "hogcnn_lodo": {
+    "accuracy": {
+      "mean": 0.835016835016835,
+      "sample_sd": 0.028619528619528614
+    },
+    "macro_f1": {
+      "mean": 0.8058100524904738,
+      "sample_sd": 0.028648723867128145
+    },
+    "balanced_accuracy": {
+      "mean": 0.809063620183992,
+      "sample_sd": 0.026626115917375934
+    }
+  },
+  "stare_v8_complete_and_valid": true,
+  "stare_handcrafted_equivalence_passed": true,
+  "proposed_frozen_vit_resolved_id": "timm/vit_base_patch16_224.augreg2_in21k_ft_in1k",
+  "roi_coordinate_status": "Historical per-image crop coordinates not retained; exact raw-to-historical-ROI pixel replay is not claimed.",
+  "known_comparator_source_limitations": [
+    "Original full-fine-tuning LODO runner not present in supplied artifacts",
+    "Original HOG-CNN training source not present in supplied artifacts; audited predictions/metrics and large feature-cache asset are available"
+  ],
+  "normal_git_file_over_25MiB": false
+}
