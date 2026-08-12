@@ -1,7 +1,7 @@
 {
-  "package_root": "C:\\Users\\ACER\\Documents\\Juli Riset\\AMD_R2_2_CONTEMPORARY_BASELINES_PACKAGE_v1",
-  "roi_zip": "C:\\Users\\ACER\\Documents\\Juli Riset\\AMD_R2_2_CONTEMPORARY_BASELINES_PACKAGE_v1\\notebooks\\ROI_594.zip",
-  "roi_root": "C:\\Users\\ACER\\Documents\\Juli Riset\\AMD_R2_2_CONTEMPORARY_BASELINES_PACKAGE_v1\\data\\ROI_594",
+  "package_root": "<LOCAL_PROJECT_ROOT>\\AMD_R2_2_CONTEMPORARY_BASELINES_PACKAGE_v1",
+  "roi_zip": "<LOCAL_PROJECT_ROOT>\\AMD_R2_2_CONTEMPORARY_BASELINES_PACKAGE_v1\\notebooks\\ROI_594.zip",
+  "roi_root": "<LOCAL_PROJECT_ROOT>\\AMD_R2_2_CONTEMPORARY_BASELINES_PACKAGE_v1\\data\\ROI_594",
   "manifest_rows": 594,
   "unique_sample_ids": 594,
   "class_counts": {

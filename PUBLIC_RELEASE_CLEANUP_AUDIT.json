@@ -1,0 +1,20 @@
+{
+  "version": "v1.1-public-preflight",
+  "files_modified_for_local_path_sanitization": [
+    "metadata/provenance/manual_validation_log.csv",
+    "metadata/provenance/normal_provenance_mapping_order_aligned.csv",
+    "metadata/provenance/pipeline_provenance_manifest_594.csv",
+    "metadata/provenance/pipeline_provenance_manifest_597.csv",
+    "metadata/provenance/raw_structure_b_audit.csv",
+    "notebooks/05_retfound_frozen_pca128_svm.ipynb",
+    "results/reference/computational_benchmark/full_finetuning_checkpoint_inference_runs.csv",
+    "results/reference/computational_benchmark/full_finetuning_training_summary.csv",
+    "results/reference/hogcnn_internal/EFFICIENTNETB3_FROZEN_CACHE_AUDIT.json",
+    "results/reference/hogcnn_internal/HOGCNN_RELEASE_PREFLIGHT_AUDIT.json",
+    "results/reference/hogcnn_internal/HOG_CACHE_AUDIT.json"
+  ],
+  "root_license_note_moved_to": "docs/CODE_LICENSING_NOTE.md",
+  "critical_sensitive_path_or_token_hits_after_cleanup": [],
+  "file_count": 235,
+  "normal_file_over_25MiB": false
+}

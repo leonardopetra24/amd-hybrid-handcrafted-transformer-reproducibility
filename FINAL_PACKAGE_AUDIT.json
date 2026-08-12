@@ -1,5 +1,5 @@
 {
-  "package_status": "READY_FOR_PRIVATE_GITHUB_UPLOAD",
+  "package_status": "PRIVATE_GITHUB_UPLOADED_PUBLIC_PREFLIGHT_PENDING",
   "public_release_requires": [
     "author code-license decision",
     "final online audit",
@@ -65,5 +65,10 @@
     "Original full-fine-tuning LODO runner not present in supplied artifacts",
     "Original HOG-CNN training source not present in supplied artifacts; audited predictions/metrics and large feature-cache asset are available"
   ],
-  "normal_git_file_over_25MiB": false
+  "normal_git_file_over_25MiB": false,
+  "privacy_cleanup": {
+    "author_specific_absolute_paths_removed": true,
+    "replacement_placeholder": "<LOCAL_PROJECT_ROOT>",
+    "credentials_found_in_public_files": false
+  }
 }
