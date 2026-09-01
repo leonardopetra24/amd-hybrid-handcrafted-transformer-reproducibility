@@ -116,7 +116,8 @@ RETFound feature extraction requires the corresponding third-party checkpoint an
 
 ### Supplementary Table S1
 
-[Supplementary Table S1](docs/Supplementary_Table_S1.md)
+See [Supplementary Table S1](docs/Supplementary_Table_S1.md) for the detailed handcrafted-feature contribution diagnostics.
+
 
 Supplementary Table S1 consolidates the detailed handcrafted-feature contribution diagnostics reported in the manuscript, including:
 
@@ -162,7 +163,8 @@ python scripts/reproduce_nested_primary_metrics.py
 python scripts/audit_public_package.py
 ```
 
-See docs/NOTEBOOK_ORDER.md for the recommended experiment and notebook order.
+For the recommended experiment and notebook order, see [Notebook Order](docs/NOTEBOOK_ORDER.md).
+
 ---
 
 ## Computational Benchmark Scope
