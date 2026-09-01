@@ -65,11 +65,7 @@ Therefore:
 **Exact pixel-level replay of the original raw-image-to-ROI placement is not claimed.**
 Executable preprocessing and assisted-cropping utilities are included. Given access to the referenced frozen ROIs, the released resources support reproduction of the core frozen-feature pipeline and downstream analyses.
 
-See:
-
-`docs/DATA_AND_ROI_PROVENANCE.md`
-
-for additional provenance information.
+For additional provenance information, see [Data and ROI Provenance](docs/DATA_AND_ROI_PROVENANCE.md).
 
 ---
 
