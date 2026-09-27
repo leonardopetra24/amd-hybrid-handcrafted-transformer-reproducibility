@@ -15,9 +15,11 @@ The results should be interpreted as supporting diagnostics rather than as indep
 | Color9 unique contribution | +1.45 | +1.25 | Positive accuracy effect in 5/5 seeds |
 | LBP18 added to Frozen ViT | +1.41 | +1.45 | Standalone complementarity relative to Frozen ViT |
 | LBP18 unique contribution after other handcrafted families | +0.27 | — | Limited unique incremental accuracy after other handcrafted families were present |
-| Haralick5 removal | -0.61 | -0.50 | Small effect; does not establish that Haralick features are universally harmful |
+| Haralick5 removal | +0.61 | +0.50 | Small numerical gain after removal; does not establish that Haralick features are universally harmful |
 
-**Interpretation.** Color moments showed the clearest unique numerical contribution. LBP produced a larger gain when added directly to the frozen ViT representation, but its unique contribution became substantially smaller after the other handcrafted families were present. The Haralick effect was small and did not provide robust evidence of a unique incremental contribution.
+**Difference definition for Haralick5 removal.** Values are the five-seed mean of seed-level pooled LODO metrics for the model without Haralick minus the corresponding full-model metrics. Positive values indicate improved performance after removal.
+
+**Interpretation.** Color moments showed the clearest unique numerical contribution. LBP produced a larger gain when added directly to the frozen ViT representation, but its unique contribution became substantially smaller after the other handcrafted families were present. Removing Haralick produced small numerical gains of 0.61 percentage points in accuracy and 0.50 percentage points in macro-F1. These gains do not establish that Haralick descriptors are universally harmful.
 
 ---
 
@@ -71,6 +73,6 @@ These results are consistent with the conclusion reported in the manuscript that
 
 ## Relationship to the main manuscript
 
-The summarized interpretation is reported in Section 4.5, "Evidence for and limits of handcrafted contribution," and the matched-dimensionality controls are reported in Table 8 of the main manuscript.
+The summarized interpretation is reported in Section 4.5, "Evidence for and limits of handcrafted contribution," and the matched-dimensionality controls are reported in Table 9 of the main manuscript.
 
 The present supplementary table provides the detailed family-ablation, grouped-permutation, PCA-loading, and linear-surrogate diagnostics referenced from Section 4.5.
